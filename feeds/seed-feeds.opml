@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Smart Media Monitor - Seed Feeds</title>
+  </head>
+  <body>
+    <outline text="Jordan" title="Jordan" />
+    <outline text="Middle East" title="Middle East" />
+    <outline text="International" title="International" />
+    <outline text="AI and Media" title="AI and Media" />
+    <outline text="Research Centers" title="Research Centers" />
+  </body>
+</opml>
