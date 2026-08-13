@@ -1,0 +1,42 @@
+name: Translation Smoke Test
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/translate_argos.py"
+      - "requirements-translation.txt"
+      - ".github/workflows/translation-smoke-test.yml"
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install translation engine
+        run: pip install -r requirements-translation.txt
+
+      - name: Create English sample
+        run: |
+          mkdir -p exports
+          cat > exports/translation-sample.csv <<'CSV'
+          title,summary,source,language
+          "Artificial intelligence is changing newsroom workflows","Editors are testing automation for monitoring verification and production","Demo Source","en"
+          "Jordan hosts a regional media conference","Journalists discuss digital transformation and newsroom innovation","Demo Source","en"
+          CSV
+
+      - name: Translate sample to Arabic
+        run: python scripts/translate_argos.py exports/translation-sample.csv exports/translation-sample-ar.csv --from en --to ar --limit 2
+
+      - name: Upload translation output
+        uses: actions/upload-artifact@v4
+        with:
+          name: translation-smoke-test-output
+          path: exports/translation-sample-ar.csv
