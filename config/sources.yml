@@ -1,0 +1,136 @@
+sources:
+  - id: almamlaka
+    name: قناة المملكة
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://www.almamlakatv.tv/
+    enabled: true
+
+  - id: petra
+    name: وكالة الأنباء الأردنية بترا
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://petra.gov.jo/ar
+    enabled: true
+
+  - id: roya-news
+    name: رؤيا الإخباري
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://royanews.tv/
+    enabled: true
+
+  - id: skynewsarabia
+    name: سكاي نيوز عربية
+    country: UAE
+    language: ar
+    mode: html
+    url: https://www.skynewsarabia.com/news
+    enabled: true
+
+  - id: bbc-arabic
+    name: بي بي سي عربي
+    country: UK
+    language: ar
+    mode: html
+    url: https://www.bbc.com/arabic
+    enabled: true
+
+  - id: dw-arabic
+    name: دويتشه فيله عربي
+    country: Germany
+    language: ar
+    mode: html
+    url: https://www.dw.com/ar/
+    enabled: true
+
+  - id: france24-ar
+    name: فرانس 24 عربي
+    country: France
+    language: ar
+    mode: html
+    url: https://www.france24.com/ar/
+    enabled: true
+
+  - id: rt-arabic
+    name: روسيا اليوم عربي
+    country: Russia
+    language: ar
+    mode: html
+    url: https://arabic.rt.com/
+    enabled: true
+
+  - id: alrai
+    name: صحيفة الرأي الأردنية
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://alrai.com/
+    enabled: false
+
+  - id: addustour
+    name: صحيفة الدستور الأردنية
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://www.addustour.com/
+    enabled: false
+
+  - id: alghad
+    name: صحيفة الغد الأردنية
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://alghad.com/
+    enabled: false
+
+  - id: jrtv
+    name: التلفزيون الأردني
+    country: Jordan
+    language: ar
+    mode: html
+    url: https://www.jrtv.gov.jo/
+    enabled: false
+
+  - id: syria-tv
+    name: تلفزيون سوريا
+    country: Syria
+    language: ar
+    mode: html
+    url: https://www.syria.tv/
+    enabled: false
+
+  - id: alarabiya
+    name: العربية
+    country: UAE
+    language: ar
+    mode: html
+    url: https://www.alarabiya.net/
+    enabled: false
+
+  - id: almayadeen
+    name: الميادين
+    country: Lebanon
+    language: ar
+    mode: html
+    url: https://www.almayadeen.net/
+    enabled: false
+
+  - id: cnn
+    name: CNN
+    country: USA
+    language: en
+    mode: html
+    url: https://www.cnn.com/
+    enabled: false
+
+  - id: foxnews
+    name: Fox News
+    country: USA
+    language: en
+    mode: html
+    url: https://www.foxnews.com/
+    enabled: false
