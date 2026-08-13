@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Smart Media Monitor - Seed Feeds</title>
+    <title>Smart Media Monitor - Verified Seed Feeds</title>
   </head>
   <body>
-    <outline text="Jordan" title="Jordan" />
-    <outline text="Middle East" title="Middle East" />
-    <outline text="International" title="International" />
-    <outline text="AI and Media" title="AI and Media" />
-    <outline text="Research Centers" title="Research Centers" />
+    <outline text="Arabic International" title="Arabic International">
+      <outline type="rss" text="BBC Arabic" title="BBC Arabic" xmlUrl="https://feeds.bbci.co.uk/arabic/rss.xml" htmlUrl="https://www.bbc.com/arabic" />
+      <outline type="rss" text="DW Arabic" title="DW Arabic" xmlUrl="https://rss.dw.com/rdf/rss-ar-all" htmlUrl="https://www.dw.com/ar/" />
+    </outline>
+    <outline text="International English" title="International English">
+      <outline type="rss" text="Fox News - Latest" title="Fox News - Latest" xmlUrl="https://moxie.foxnews.com/google-publisher/latest.xml" htmlUrl="https://www.foxnews.com/" />
+      <outline type="rss" text="Fox News - World" title="Fox News - World" xmlUrl="https://moxie.foxnews.com/google-publisher/world.xml" htmlUrl="https://www.foxnews.com/world" />
+    </outline>
   </body>
 </opml>
