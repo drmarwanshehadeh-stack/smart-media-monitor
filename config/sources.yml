@@ -4,7 +4,7 @@ sources:
     country: Jordan
     language: ar
     mode: html
-    url: https://www.almamlakatv.tv/
+    url: https://almamlakatv.com/
     enabled: true
 
   - id: petra
