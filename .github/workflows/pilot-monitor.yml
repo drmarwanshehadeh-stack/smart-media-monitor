@@ -6,7 +6,9 @@ on:
     paths:
       - "config/sources.yml"
       - "scripts/collect_news.py"
+      - "scripts/translate_argos.py"
       - "requirements.txt"
+      - "requirements-translation.txt"
       - ".github/workflows/pilot-monitor.yml"
 
 jobs:
@@ -21,13 +23,19 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install collection dependencies
         run: pip install -r requirements.txt
 
       - name: Collect pilot news
         run: python scripts/collect_news.py config/sources.yml exports
+
+      - name: Install translation dependencies
+        run: pip install -r requirements-translation.txt
+
+      - name: Translate non-Arabic news to Arabic
+        run: python scripts/translate_argos.py exports/latest.csv exports/latest_translated.csv --to ar --limit 100
 
       - name: Upload monitoring output
         if: always()
